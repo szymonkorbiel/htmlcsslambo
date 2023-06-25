@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/ico" href="./img/favicon.ico" />
+        <meta name="author" content="Szymon Korbiel"/>
+	    <meta name="language" content="en"/>
+		<title>Automobili Lamborghini</title>
+
+	</head>
+    <body onload="rotate();">
+		<header>
+			<div class="logodiv">
+				<img src="./img/logo.png" alt="logo" id="logo" />
+				<h4 class="logo">Automobili<br>Lamborghini</h4>
+			</div>
+			<nav>
+				<ul class="navlinks">
+                    <li><a class="navlink" href="index.html">Home</a></li>
+					<li><a class="navlink" href="specs.html">Specs</a></li>
+					<li><a class="navlink" href="history.html">History</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+            <div id="function"><img src="img/bg.jpg" id="tlo" alt="banner" />
+			<section class="presentation"> 
+				<div class="intro">
+					<div class="introtxt">
+						<h1>A dying species</h1>
+						<p>Huge V12, unforgettable noise and driving experience.<br> Introducing Lamborghini</p>
+					</div>
+					<div id="btts">
+						<button id="dealer" onclick="window.location.href='https://www.lamborghini.com/en-en/dealer-locator'">Dealerships</button>
+						<button id="official" onclick="window.location.href='https://www.lamborghini.com/en-en'">Official</button>
+					</div>
+				</div>
+				<div class="cover">
+					<img src="./img/bull.png" alt="bull" class="animation"/>
+				</div>  
+			</section>
+        </div>
+		</main>
+        <footer>
+        <span id="date"></span>
+        <span class="caption">&copy;&nbsp;Szymon Korbiel 2021 </span>
+        <button onclick="topFunction()" id="top" title="Go to top">back to top</button>
+        </footer>
+        <script src="./scripts/bgs.js"></script>
+        <script src="./scripts/btt.js"></script>
+        <script src="./scripts/time.js"></script>
+	</body>
+</html>

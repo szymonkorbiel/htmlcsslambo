@@ -1,0 +1,254 @@
+/*fonts*/
+@font-face {
+  font-family: Kanit;
+  src: url(./fonts/Kanit-Black.ttf);
+}
+@font-face {
+  font-family: Kanit-Bold;
+  src: url(./fonts/Kanit-Bold.ttf);
+}
+@font-face {
+  font-family: Yellowtail;
+  src: url(./fonts/Yellowtail-Regular.ttf);
+}
+/*html5*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Kanit-Bold';
+}
+header {
+	display: flex;
+	margin: auto;
+	align-items: center;
+    background-color: #3c4043;
+}
+nav {
+	flex: 2;
+}
+main{
+
+}
+footer {
+    padding:25px;
+    background-color: #3c4043;
+    text-align: center;
+    color: #deae47;
+    position:fixed;
+    width: 100%;
+    z-index: 2;
+    height: 20%;
+    margin-top: -30px;
+}
+tr{
+    margin: 15px;
+}
+td{
+    padding: 10px;
+}
+button {
+	font-family: 'Kanit';
+}
+/*classes*/
+.logodiv,
+.navlinks{
+	display: flex;
+}
+
+.logodiv {
+	flex: 1;
+}
+.logo {
+    font-family: Yellowtail;
+    font-size: 20px;
+	font-weight: 400;
+    color:#deae47;
+	margin-right: 5%;
+    margin-top: 10%;
+}
+.navlinks {
+	display: flex;
+    justify-content: space-around;
+    align-items: start;
+    list-style-type: none;
+}
+.navlink {
+    --fill-color: #deae47;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 3rem Kanit, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+    
+}
+.navlink:hover {
+        background-size: 100%;
+        color:  #3c4043;
+      }
+
+.presentation {
+	display: flex;
+	width: 90%;
+    height: 750px;
+	margin: auto;
+	align-items: center;
+}
+.intro {
+	flex: 1;
+}
+
+.introtxt h1 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #3c4043, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #deae47;
+}
+.introtxt h3 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #3c4043, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #deae47;
+}
+.introtxt p {
+	margin-top: 5px;
+	font-size: 22px;
+    background: linear-gradient(to right, #3c4043, #6f6f89);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #deae47;
+}
+.cover {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	height: 450px;
+}
+.cover img {
+	height: 120%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+.caption {
+    color:#deae47;
+}
+/*id*/
+#logo {
+    width: 20%;
+    height: 20%;
+    margin: 2%;
+}
+#tlo {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    z-index: -1;
+}
+#top {
+
+    margin: 5px;
+    background-color: #deae47;
+    color: #3c4043;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px;
+    border-radius: 20px 10px;
+    float: right;
+}
+#top:hover {
+    background-color: #3c4043;
+    color: #deae47;
+    transition: 0.3s;
+}
+#btts {
+	padding: 50px 0px 0px 0px;
+}
+#official {
+	border: 2px solid #3c4043;
+	background: transparent;
+	color: #3c4043;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+#official:hover {
+    background-color:#deae47;
+    transition: 0.3s;
+}
+#dealer {
+	background: #3c4043;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: #deae47;
+	margin: 30px 0px 0px 30px;
+}
+#dealer:hover {
+    background-color:#deae47;
+    color: #3c4043;
+    transition: 0.3s;
+}
+#date {
+    font-size: 15px;
+    float: left;
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@media screen and (max-width: 1024px) {
+    main {
+        background-image: url("./img/mobile.jpg");
+        background-size: 100%;
+    }
+    footer {
+        position: absolute;
+        z-index: -1;
+    }
+    .nav-link {
+        font-size: 20px;
+    }
+    .presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5px;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 25px;
+	}
+    .intro-text h3 {
+		font-size: 20px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.btts {
+		padding: 10px 0px 0px 0px;
+	}
+	.cover img {
+		height: 100%;
+	}
+}
